@@ -39,7 +39,7 @@ combined_df = weather_df.join(
 
 # Create a column "fire" which is True if there was a fire on that date, otherwise False
 combined_df = combined_df.withColumn(
-    "fire",
+    "fire label",
     when(col("fire_start_date").isNotNull(), True).otherwise(False)
 )
 
