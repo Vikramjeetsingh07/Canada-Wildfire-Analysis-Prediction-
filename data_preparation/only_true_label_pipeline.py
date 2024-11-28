@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, to_date
 
-
+#This pipeline is for all True labels meaning all incidents when fire happened with weather on that date
 spark = SparkSession.builder \
     .appName("Top Ten MODIS and Weather Data Join") \
     .getOrCreate()

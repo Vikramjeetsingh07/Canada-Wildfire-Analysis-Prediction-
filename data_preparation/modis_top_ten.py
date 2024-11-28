@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, lit
-
+#This keeps only top ten cities from entire modis data using longitude and latitude
 
 spark = SparkSession.builder \
     .appName("MODIS Multiple Locations Data") \
