@@ -1,18 +1,18 @@
 ## Forecast 🚀 - Project on predicting Fire Forest for the top ten cities with most wildfires in Canada
 ## Location for this project:
 # Locations with latitude and longitude
-locations = [
-    {"name": "Fort McMurray", "latitude": 56.7265, "longitude": -111.379},
-    {"name": "Kelowna", "latitude": 49.888, "longitude": -119.496},
-    {"name": "Kamloops", "latitude": 50.6745, "longitude": -120.3273},
-    {"name": "Prince George", "latitude": 53.9171, "longitude": -122.7497},
-    {"name": "Vancouver Island", "latitude": 49.6508, "longitude": -125.4492},
-    {"name": "Lytton", "latitude": 50.2316, "longitude": -121.5824},
-    {"name": "Penticton", "latitude": 49.4991, "longitude": -119.5937},
-    {"name": "Williams Lake", "latitude": 52.141, "longitude": -122.141},
-    {"name": "Grande Prairie", "latitude": 55.1707, "longitude": -118.7884},
-    {"name": "Edson", "latitude": 53.581, "longitude": -116.439}
-]
+Fort McMurray: (56.7265, -111.379)
+Kelowna: (49.888, -119.496)
+Kamloops: (50.6745, -120.3273)
+Prince George: (53.9171, -122.7497)
+Vancouver Island: (49.6508, -125.4492)
+Lytton: (50.2316, -121.5824)
+Penticton: (49.4991, -119.5937)
+Williams Lake: (52.141, -122.141)
+Grande Prairie: (55.1707, -118.7884)
+Edson: (53.581, -116.439)
+
+
 
 ### Overview
 This project explores predication on wildfires in Canada from 2006 to 2023, utilizing weather data and NASA FIRMS satellite scan data.
