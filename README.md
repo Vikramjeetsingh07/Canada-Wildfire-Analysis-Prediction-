@@ -1,17 +1,21 @@
 ## Forecast 🚀 - Project on predicting Fire Forest for the top ten cities with most wildfires in Canada
 ## Location for this project:
-# Locations with latitude and longitude
-Fort McMurray: (56.7265, -111.379)
-Kelowna: (49.888, -119.496)
-Kamloops: (50.6745, -120.3273)
-Prince George: (53.9171, -122.7497)
-Vancouver Island: (49.6508, -125.4492)
-Lytton: (50.2316, -121.5824)
-Penticton: (49.4991, -119.5937)
-Williams Lake: (52.141, -122.141)
-Grande Prairie: (55.1707, -118.7884)
-Edson: (53.581, -116.439)
+# Locations with Latitude and Longitude
 
+The following table lists various locations with their respective latitude and longitude:
+
+| Name              | Latitude  | Longitude   |
+|-------------------|-----------|-------------|
+| Fort McMurray     | 56.7265   | -111.379    |
+| Kelowna           | 49.888    | -119.496    |
+| Kamloops          | 50.6745   | -120.3273   |
+| Prince George     | 53.9171   | -122.7497   |
+| Vancouver Island  | 49.6508   | -125.4492   |
+| Lytton            | 50.2316   | -121.5824   |
+| Penticton         | 49.4991   | -119.5937   |
+| Williams Lake     | 52.141    | -122.141    |
+| Grande Prairie    | 55.1707   | -118.7884   |
+| Edson             | 53.581    | -116.439    |
 
 
 ### Overview
