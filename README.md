@@ -20,10 +20,14 @@ The following table lists various locations with their respective latitude and l
 ### Overview
 This project explores predication on wildfires in Canada from 2006 to 2023, utilizing weather data and NASA FIRMS satellite scan data.
 
-The whole procedue can be mainly divided to three parts:
-- Data Processing
-- Analysis
-- Machine Learning Training and Testing
+The whole procedure can be mainly divided into three parts:
+- Data collection
+- Data ETL
+- Feature Addition
+- Feature Extraction
+- Analysis of dataset
+- Machine Learning for predicting Fire happens or not (classification)l
+- Machine Learning for Predicting brightness and confidence value in modis (regression).
 
 ### Data Processing
 We collected the weather data from [open-meteo](https://open-meteo.com/) through [Python API](https://github.com/Vikramjeetsingh07/Canada-Wildfire-Analysis-Prediction-/blob/main/data-prep/multiple_cities_open_meteo_weather_data_code.py). Then, we joined the weather data with Modis data on date & city on [data_pipeline_top_ten_cities.py](https://github.com/Vikramjeetsingh07/Canada-Wildfire-Analysis-Prediction-/blob/main/data-prep/data_pipeline_top_ten_cities.py).
