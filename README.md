@@ -1,6 +1,6 @@
-## Forecast 🚀 - Project on predicting Fire Forest for the top ten cities with most wildfires in Canada
+# Forecast 🚀 - Project on predicting Fire Forest for the top ten cities with most wildfires in Canada
 ## Location for this project:
-# Locations with Latitude and Longitude
+## Locations with Latitude and Longitude
 
 The following table lists various locations with their respective latitude and longitude:
 
