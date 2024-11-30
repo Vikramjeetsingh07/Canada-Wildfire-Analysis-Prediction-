@@ -1,4 +1,4 @@
-## Forecast 🚀 - Project on predicting Fire Forest in the major cities in Canada
+## Forecast 🚀 - Project on predicting Fire Forest for the top ten cities with most wildfires in Canada
 ### Overview
 This project explores predication on wildfires in Canada from 2006 to 2023, utilizing weather data and NASA FIRMS satellite scan data.
 
