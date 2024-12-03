@@ -27,7 +27,8 @@ With `top_ten_wildfire_weather_data_complete.csv`, we continued to add some new 
 
 $$
 \text{RH} = 100 \times \frac{\exp\left(\frac{17.625 \cdot T_{\text{min}}}{T_{\text{min}} + 243.04}\right)}{\exp\left(\frac{17.625 \cdot T_{\text{max}}}{T_{\text{max}} + 243.04}\right)}
-$$These enhancements have helped in refining our analysis and improving model accuracy.
+$$
+These enhancements have helped in refining our analysis and improving model accuracy.
 
 ### Analysis
 Our comprehensive analysis focused on correlating various environmental factors such as wind, temperature, and precipitation with wildfire occurrences. The feature correlation insights and the identification of significant predictors such as brightness and fire intensity based on MODIS data have informed the model development phase. Conclusions from the analysis demonstrated the critical impact of temperature increases and precipitation decreases on fire risk, emphasizing the need for predictive modeling to incorporate these variables effectively.
