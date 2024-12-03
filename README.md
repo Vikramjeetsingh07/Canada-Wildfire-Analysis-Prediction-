@@ -42,5 +42,3 @@ We employed RandomForest and Gradient Boosting classifiers to predict whether a 
 
 #### Regression
 We have applied various regression models to predict the brightness and confidence levels reported by MODIS. Our neural network regressor outperformed other models, achieving an RMSE of 15.38 and R² of 0.991 for brightness prediction. The regression models have been critical in accurately predicting fire characteristics from satellite data.
-
-This enhanced README preserves the original structure while incorporating detailed insights from the extended analysis and results sections to provide a comprehensive view of the project's scope and its impact.
