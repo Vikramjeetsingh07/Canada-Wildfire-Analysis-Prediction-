@@ -96,14 +96,6 @@ Wildfires are a growing concern in Canada, driven by climate change. This projec
 
 ---
 
-## Challenges Faced
-
-1. Data quality issues, including missing values and noisy data.
-2. Aligning spatial-temporal resolutions of diverse datasets.
-3. Optimizing machine learning models for high-dimensional and noisy data.
-
----
-
 ## Future Work
 
 - Incorporating additional datasets like soil moisture and vegetation indices.
