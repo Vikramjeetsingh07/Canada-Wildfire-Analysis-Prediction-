@@ -60,14 +60,6 @@ Wildfires are a growing concern in Canada, driven by climate change. This projec
 
 ---
 
-## Results
-
-Key findings include:
-- **Wildfire Predictors**: High brightness, dryness, and temperatures strongly correlate with wildfire occurrences.
-- **Geographic Insights**: Cities like Kamloops, Penticton, and Kelowna show higher wildfire risks.
-- **Temporal Trends**: Significant wildfire activity spikes in years with hotter and drier conditions, e.g., 2016 and 2021.
-
----
 
 ## Technologies
 
