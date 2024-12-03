@@ -1,6 +1,6 @@
-# Forecast 🚀 - Project on predicting Forest Fires for the top ten cities with most wildfires in Canada
+# Forecast  - Predicting Forest Fires for the top ten cities with the most wildfires in Canada
 
-## Locations for this project with Latitude and Longitude
+## Locations relevant for this project with Latitude and Longitude
 
 The following table lists various locations with their respective latitude and longitude:
 
@@ -17,28 +17,114 @@ The following table lists various locations with their respective latitude and l
 | Grande Prairie    | 55.1707   | -118.7884   |
 | Edson             | 53.581    | -116.439    |
 
-### Overview
-This project explores prediction on wildfires in Canada from 2006 to 2023, utilizing weather data and NASA FIRMS satellite scan data. The whole procedure can be mainly divided into six parts: Data collection, Data ETL, Feature Addition, Feature Extraction, Analysis of dataset, and Machine Learning for predicting Fire happens or not (classification) and brightness and confidence value in MODIS (regression).
+# Canada Wildfire Analysis and Prediction
 
-### Data Processing
-We collected the weather data from [open-meteo](https://open-meteo.com/) through [Python API](https://github.com/Vikramjeetsingh07/Canada-Wildfire-Analysis-Prediction-/blob/main/data_preparation/open_meteo_weather_data_top_ten_cities.py). Then, we joined the weather data with MODIS data on date & city on [data_pipeline_top_ten_cities.py](https://github.com/Vikramjeetsingh07/Canada-Wildfire-Analysis-Prediction-/blob/main/data_preparation/final_data_pipeline.py).
+This project explores wildfire patterns and predictive modeling in Canada from 2006 to 2023. By combining data from NASA's FIRMS (Fire Information for Resource Management System) and Open-Meteo, the project aims to analyze wildfire occurrences and develop machine learning models for prediction based on environmental and climatic factors.
 
-With `top_ten_wildfire_weather_data_complete.csv`, we continued to add some new features to the existing ones to expand the meaning of the dataset. Through add_newFeatures.ipynb, we managed to add features like new_fire_intensity, new_daylight_fraction, new_fire_risk, new_relative_humidity, etc. For example, the new_relative_humidity was computed as:
+---
 
-$$
-\text{RH} = 100 \times \frac{\exp\left(\frac{17.625 \cdot T_{\text{min}}}{T_{\text{min}} + 243.04}\right)}{\exp\left(\frac{17.625 \cdot T_{\text{max}}}{T_{\text{max}} + 243.04}\right)}
-$$
+## Problem Statement
 
-These enhancements have helped in refining our analysis and improving model accuracy.
+Wildfires are a growing concern in Canada, driven by climate change. This project addresses challenges like:
+- Analyzing large, multivariate datasets from NASA FIRMS and Open-Meteo.
+- Preprocessing data to align spatial and temporal resolutions.
+- Developing predictive models to understand wildfire risks.
 
-### Analysis
-Our comprehensive analysis focused on correlating various environmental factors such as wind, temperature, and precipitation with wildfire occurrences. The feature correlation insights and the identification of significant predictors such as brightness and fire intensity based on MODIS data have informed the model development phase. Conclusions from the analysis demonstrated the critical impact of temperature increases and precipitation decreases on fire risk, emphasizing the need for predictive modeling to incorporate these variables effectively.
+---
 
-### Machine Learning Training and Testing
-The machine learning component was divided into two parts: Classification and Regression.
+## Methodology
 
-#### Classification
-We employed RandomForest and Gradient Boosting classifiers to predict whether a wildfire will occur based on environmental conditions reported on specific days. Our initial models achieved an accuracy of 87%, which improved to nearly 95% after hyperparameter tuning. This tuning involved adjusting parameters such as the number of decision trees in the RandomForest model and the learning rate in the Gradient Boosting model. The high accuracy of these models underscores their effectiveness in distinguishing days with high wildfire risk from those with low risk.
+### Data Sources
+- **NASA FIRMS**: Satellite data on wildfire brightness, fire radiative power (FRP), and confidence.
+- **Open-Meteo**: Weather data for Canadian cities prone to wildfires, including temperature, precipitation, and wind metrics.
 
-#### Regression
-We have applied various regression models to predict the brightness and confidence levels reported by MODIS. Our neural network regressor outperformed other models, achieving an RMSE of 15.38 and R² of 0.991 for brightness prediction. The regression models have been critical in accurately predicting fire characteristics from satellite data.
+### Data Preparation
+- Preprocessing involved aligning datasets by location and date, imputing missing values, and removing outliers.
+- Feature engineering created derived metrics like dryness index, cumulative precipitation, and fire intensity.
+
+### Data Analysis
+- Analyzed feature correlations, trends over time, and geographic variability.
+- Conducted city-specific comparisons to identify high-risk areas.
+
+---
+
+## Machine Learning Models
+
+### Classification
+- **Algorithms**: Random Forest, Gradient Boosted Trees (GBT), Neural Networks, SVM, Logistic classification.
+- **Results**: Accuracy up to **99.9%** for predicting wildfire occurrences.
+
+### Regression
+- **Algorithms**: Neural Networks, XGBoost, LightGBM, Random Forest, Linear Regression.
+- **Results**: Neural Networks achieved **R² = 0.991** and RMSE = **15.38** for predicting wildfire brightness.
+
+---
+
+## Results
+
+Key findings include:
+- **Wildfire Predictors**: High brightness, dryness, and temperatures strongly correlate with wildfire occurrences.
+- **Geographic Insights**: Cities like Kamloops, Penticton, and Kelowna show higher wildfire risks.
+- **Temporal Trends**: Significant wildfire activity spikes in years with hotter and drier conditions, e.g., 2016 and 2021.
+
+---
+
+## Technologies
+
+- **Distributed Computing**: Apache Spark for scalable data processing and machine learning.
+- **Visualization**: Matplotlib and Seaborn for trend analysis and feature importance.
+- **Machine Learning Frameworks**: PySpark ML, XGBoost, LightGBM, and TensorFlow.
+
+---
+###  Scalability
+- Implemented distributed computing using PySpark for efficient ETL and model training on large datasets.
+
+---
+## Results and Visualizations
+
+### Key Findings
+- **Wildfire Predictors**: High brightness, dryness index, and elevated temperatures are strong indicators of wildfire activity.
+- **Geographic Trends**: Kamloops, Penticton, and Kelowna consistently show high wildfire intensity and frequency.
+- **Temporal Trends**: Significant wildfire activity spikes in 2016 and 2021 due to extreme heat and dryness.
+
+### Visualizations
+1. **Heatmaps**: Show correlations between wind, soil moisture, and fire intensity.
+2. **City Trends**: Highlight yearly patterns in dryness, temperature, and fire risk.
+3. **Wildfire Counts**: Geographic variability of wildfire occurrences from 2006–2023.
+4. **Prediction Results**: Charts comparing model accuracy and performance metrics.
+
+---
+
+## Repository Contents
+
+- **Data Pipeline Scripts**: ETL scripts for data preprocessing and feature engineering.
+- **Machine Learning Models**: Code for training, validation, and prediction.
+- **Visualizations**: Graphs and heatmaps for analysis and insights.
+- **Reports**: Detailed analysis and model results.
+
+---
+
+## Challenges Faced
+
+1. Data quality issues, including missing values and noisy data.
+2. Aligning spatial-temporal resolutions of diverse datasets.
+3. Optimizing machine learning models for high-dimensional and noisy data.
+
+---
+
+## Future Work
+
+- Incorporating additional datasets like soil moisture and vegetation indices.
+- Extending the analysis to other regions or smaller geographic scales.
+- Developing a user-friendly interface for real-time wildfire risk prediction.
+
+---
+
+## Contributors
+
+- **Vikramjeet Singh**
+- **Yiming**
+- **Harman**
+- **Wenhao**
+
+---
