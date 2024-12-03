@@ -28,6 +28,7 @@ With `top_ten_wildfire_weather_data_complete.csv`, we continued to add some new 
 $$
 \text{RH} = 100 \times \frac{\exp\left(\frac{17.625 \cdot T_{\text{min}}}{T_{\text{min}} + 243.04}\right)}{\exp\left(\frac{17.625 \cdot T_{\text{max}}}{T_{\text{max}} + 243.04}\right)}
 $$
+
 These enhancements have helped in refining our analysis and improving model accuracy.
 
 ### Analysis
