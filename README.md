@@ -1,5 +1,21 @@
 # Predicting and Historical analysis of Forest Fires for the top ten cities with the most wildfires in Canada
 
+## General Project Guide:
+
+## In folder data:-
+#### complete_modis_data.csv : contains modis data for entire canada.
+#### top_ten_modis.csv : it contains modis dataset for top 10 target cities.
+#### top_ten_wildfire_weather_data_complete.csv : it contains all the weather data for top ten cities 
+#### combined_final.csv : it is the final dataset used for all the analysis and ML Models (combined from top_ten_modis.csv and top_ten_wildfire_weather_data_complete.csv)
+
+
+## Reports/ visualizations:
+##### Data Analysis Report: it contains every important analysis with description and summary.
+#### Report.pdf (Required ): it contains report of the project + Data Analysis Report (which is added as we felt it would provide valuable insights)
+#### ML results.pdf : contains all the results from all the algorithms performed
+#### video presentation slides.pptx : contains slides used during project video for the flow of presentation
+
+
 ## Target Locations relevant for this project with their respective Latitude and Longitude
 
 The following table lists various locations with their respective latitude and longitude:
