@@ -1,6 +1,6 @@
-# Forecast  - Predicting Forest Fires for the top ten cities with the most wildfires in Canada
+# Predicting and Historical analysis of Forest Fires for the top ten cities with the most wildfires in Canada
 
-## Locations relevant for this project with Latitude and Longitude
+## Target Locations relevant for this project with their respective Latitude and Longitude
 
 The following table lists various locations with their respective latitude and longitude:
 
@@ -17,7 +17,7 @@ The following table lists various locations with their respective latitude and l
 | Grande Prairie    | 55.1707   | -118.7884   |
 | Edson             | 53.581    | -116.439    |
 
-# Canada Wildfire Analysis and Prediction
+# Wildfire Analysis and Prediction
 
 This project explores wildfire patterns and predictive modeling in Canada from 2006 to 2023. By combining data from NASA's FIRMS (Fire Information for Resource Management System) and Open-Meteo, the project aims to analyze wildfire occurrences and develop machine learning models for prediction based on environmental and climatic factors.
 
