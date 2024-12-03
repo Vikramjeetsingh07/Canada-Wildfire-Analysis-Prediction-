@@ -11,7 +11,7 @@
 
 ## Reports/ visualizations:
 ##### Data Analysis Report: it contains every important analysis with description and summary.
-#### Report.pdf (Required ): it contains report of the project + Data Analysis Report (which is added as we felt it would provide valuable insights)
+#### Report.pdf (Required ): it contains report of the project 
 #### ML results.pdf : contains all the results from all the algorithms performed
 #### video presentation slides.pptx : contains slides used during project video for the flow of presentation
 
